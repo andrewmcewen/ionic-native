@@ -6,12 +6,12 @@ import { Injectable } from '@angular/core';
  */
 export interface HealthDataType {
   /**
-   * Read only date types (see https://github.com/dariosalvi78/cordova-plugin-health#supported-data-types)
+   * Read only date types (see https://github.com/andrewmcewen/cordova-plugin-health#supported-data-types)
    */
   read?: string[];
 
   /**
-   * Write only date types (see https://github.com/dariosalvi78/cordova-plugin-health#supported-data-types)
+   * Write only date types (see https://github.com/andrewmcewen/cordova-plugin-health#supported-data-types)
    */
   write?: string[];
 }
@@ -31,7 +31,7 @@ export interface HealthQueryOptions {
   endDate: Date;
 
   /**
-   * Datatype to be queried (see https://github.com/dariosalvi78/cordova-plugin-health#supported-data-types)
+   * Datatype to be queried (see https://github.com/andrewmcewen/cordova-plugin-health#supported-data-types)
    */
   dataType: string;
 
@@ -67,7 +67,7 @@ export interface HealthQueryOptionsAggregated {
   endDate: Date;
 
   /**
-   * Datatype to be queried (see https://github.com/dariosalvi78/cordova-plugin-health#supported-data-types)
+   * Datatype to be queried (see https://github.com/andrewmcewen/cordova-plugin-health#supported-data-types)
    */
   dataType: string;
 
@@ -99,7 +99,7 @@ export interface HealthStoreOptions {
   endDate: Date;
 
   /**
-   * Datatype to be queried (see https://github.com/dariosalvi78/cordova-plugin-health#supported-data-types)
+   * Datatype to be queried (see https://github.com/andrewmcewen/cordova-plugin-health#supported-data-types)
    */
   dataType: string;
 
@@ -137,12 +137,12 @@ export interface HealthData {
   endDate: Date;
 
   /**
-   * Value of corresponding Datatype (see https://github.com/dariosalvi78/cordova-plugin-health#supported-data-types)
+   * Value of corresponding Datatype (see https://github.com/andrewmcewen/cordova-plugin-health#supported-data-types)
    */
   value: string;
 
   /**
-   * Unit of corresponding value of Datatype (see https://github.com/dariosalvi78/cordova-plugin-health#supported-data-types)
+   * Unit of corresponding value of Datatype (see https://github.com/andrewmcewen/cordova-plugin-health#supported-data-types)
    */
   unit: string;
 
@@ -190,7 +190,7 @@ export interface HealthData {
  * .catch(e => console.log(e));
  *
  * ```
- * See description at https://github.com/dariosalvi78/cordova-plugin-health for a full list of Datatypes and see examples.
+ * See description at https://github.com/andrewmcewen/cordova-plugin-health for a full list of Datatypes and see examples.
  *
  * @interfaces
  * HealthQueryOptions
@@ -202,7 +202,7 @@ export interface HealthData {
   pluginName: 'Health',
   plugin: 'cordova-plugin-health',
   pluginRef: 'navigator.health',
-  repo: 'https://github.com/dariosalvi78/cordova-plugin-health',
+  repo: 'https://github.com/andrewmcewen/cordova-plugin-health',
   platforms: ['Android', 'iOS']
 })
 @Injectable()
